@@ -62,7 +62,7 @@ class NewTask extends React.Component {
         } else {
         this.props.handleSaveTasks({"key":count++, "task" : this.state.task, "time" : "All Day", 'checked':false});
         }
-        this.setState({allDay :true});
+        this.setState({allDay :false});
     }
 
     //update state on task input change
