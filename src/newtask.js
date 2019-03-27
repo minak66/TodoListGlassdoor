@@ -57,10 +57,12 @@ class NewTask extends React.Component {
             return;
         }
         //call save task from App component with new task 
-        if(!this.state.allDay)      
+        if(!this.state.allDay) {     
             this.props.handleSaveTasks({"key":count++, "task" : this.state.task, "time" : this.state.time.toTimeString(), 'checked':false});
-        else
+        } else {
         this.props.handleSaveTasks({"key":count++, "task" : this.state.task, "time" : "All Day", 'checked':false});
+        }
+        this.setState({allDay :true});
     }
 
     //update state on task input change
