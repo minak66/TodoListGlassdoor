@@ -1,0 +1,10 @@
+﻿Test cases before production:
+
+
+1- allow select a date from calendar
+2- allow select a time from time picker
+3- switch between newTask and Save buttons
+4- correctly report number of tasks for each day
+5- allow to move forward and backward when tasks exist for other days
+6- do not allow to save tasks for future dates
+7- do not allow prev button to go back if there are no tasks before current day

@@ -1,33 +1,230 @@
-.App {
+body {
+  background: #fbceb2;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;
+  margin-top: 10%;
+  margin-right: 35%;
+  background-color: aliceblue;
+  height: 100%
+}
+
+.top {
+  width:100%;
+  align-content: center;
+  border-bottom-width: 1px;
+  border-bottom-color:#c3c3c3;
+  border-bottom-style: solid;
+  height: 50px;
+  justify-content: space-around;
+  padding-bottom: 3px;
+}
+
+.middle {
+  width:100%;
+  align-content: center;
+  min-height: 300px;
+  height: relative;
+}
+
+.bottom {
+  min-height: 40px;
+  width:100%;
+  align-content: center;
+  border-top-style: solid;
+  border-top-color: #c3c3c3;
+  border-top-width: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.calandarContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: aliceblue;
+  height: 100%;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.calandarChild {
+  color: #6060a2;
+  width:20%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.calandarChild:hover {
+  background-color: #8282ca;
+  color: white;
+  border-radius: 4px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.react-datepicker-wrapper {
+  width:100%;
+  height: 100%;
+}
+
+.react-datepicker__input-container {
+  width:100%;
+  height: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  
+}
+
+.react-datepicker-wrapper {
+  display: flex;
+}
+input {
+  width: 100%;
+  align-items: stretch;
+}
+
+.react-datepicker-ignore-onclickoutside{
+  width: 100%;
+}
+.pick {
+  height: 100%;
+  width: 100%;
+  background: aliceblue;
+  border: 0px;
+}
+
+.newTaskButton {
+  border: none;
+  background-color: aliceblue;
+  color: #6060a2;
+  border-radius: 6px
+}
+
+.newTaskButton:hover {
+  background-color: #8282ca;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.newtaskContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.savetaskContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newTaskDiv {
+  padding: 10px;
+}
+
+.outterNewTaskDiv {
+  width: 75%;
+  border: none;
+  background-color: aliceblue;
+  color: #6060a2;
+  font-size: x-small;
+}
+
+.saveButton {
+  width: 62%;
+  align-items: stretch;
+  background-color: #c1c1f3;
+  color: white;
+  border-radius: 4px
+}
+
+.saveButton:hover {
+  background-color: #8282ca;
+  color: white;
+  
+}
+
+.EntriesContainer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  width: 90%;
+  color: #6060a2;
+  padding: 10px;
+}
+
+.taskinput {
+  width: 60%;
+}
+.time {
+  margin-left: auto;
+}
+
+.saveTaskDiv {
+  width: 100%;
+  align-items: stretch;
+}
+.SsaveTaskDiv {
+  width: 60%;
+  align-items: stretch;
+}
+.checkbox {
+  -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 15px -15px rgba(0,0,0,0.05);
+  padding: 0px;
+  margin-top: -1px;
+	border-radius: 0px;
+	display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+/* .checkbox-checked {
+  -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 15px -15px rgba(0,0,0,0.05);
+	padding: 0px;
+	border-radius: 0px;
+	display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+} */
+
+.checkbox:active, .checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+.saveContainer {
+  display: flex;
+  direction: row;
+  width: 100%;
+  align-items: flex-start
 }
